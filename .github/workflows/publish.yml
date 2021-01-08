@@ -61,6 +61,10 @@ jobs:
         sudo pip install --upgrade setuptools
         sudo pip install tensorboard
 
+        sudo npm link
+        echo 'hello world' > report.md
+        cml-send-comment report.md
+
         npm run test
 
     - name: Publish CML docker image
