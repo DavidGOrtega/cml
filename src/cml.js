@@ -199,7 +199,7 @@ class CML {
   }
 
   async await_runner(opts = {}) {
-    const { name, max_tries = 30 } = opts;
+    const { name, max_tries = 100 } = opts;
 
     let timer = 0;
     return new Promise((resolve, reject) => {
