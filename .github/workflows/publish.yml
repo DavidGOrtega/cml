@@ -57,6 +57,9 @@ jobs:
     - name: "npm ci"
       run: npm ci
 
+    - name: "lint"
+      run: npm run lint
+
     - name: "tests"
       run: |
         sudo update-alternatives --install /usr/bin/python python $(which python3) 10
@@ -66,5 +69,5 @@ jobs:
         sudo pip install tensorboard
 
         sudo npm link
-        echo 'hello world' > report.md
+        echo 'hello world azure' > report.md
         cml-send-comment report.md
