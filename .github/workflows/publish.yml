@@ -57,9 +57,6 @@ jobs:
     - name: "npm ci"
       run: npm ci
 
-    - name: "lint"
-      run: npm run lint
-
     - name: "tests"
       run: |
         sudo update-alternatives --install /usr/bin/python python $(which python3) 10
