@@ -68,6 +68,5 @@ jobs:
         sudo pip install --upgrade setuptools
         sudo pip install tensorboard
 
-        sudo npm link
         echo 'hello world azure' > report.md
         cml-send-comment report.md
