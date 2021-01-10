@@ -49,7 +49,7 @@ jobs:
     #needs: deploy-runner
     #runs-on: [self-hosted,cml-runner]
     #runs-on: [ubuntu-latest]
-    runs-on: [self-hosted,tf]
+    runs-on: [self-hosted,tf2]
 
     steps:
     - uses: actions/checkout@v2
